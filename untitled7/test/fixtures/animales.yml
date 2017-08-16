@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Animal: MyString
+  Edad: 1
+  FechaEnac: 2017-08-16
+
+two:
+  Animal: MyString
+  Edad: 1
+  FechaEnac: 2017-08-16

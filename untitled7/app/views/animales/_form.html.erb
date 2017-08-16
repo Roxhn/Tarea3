@@ -1,0 +1,29 @@
+<%= form_for(@animale) do |f| %>
+  <% if @animale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@animale.errors.count, "error") %> prohibited this animale from being saved:</h2>
+
+      <ul>
+      <% @animale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Animal %><br>
+    <%= f.text_field :Animal %>
+  </div>
+  <div class="field">
+    <%= f.label :Edad %><br>
+    <%= f.number_field :Edad %>
+  </div>
+  <div class="field">
+    <%= f.label :FechaEnac %><br>
+    <%= f.date_select :FechaEnac %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
